@@ -27,8 +27,8 @@ public class SubString {
 	}
 	
 	public static void main(String [] args){
-		String original = "eabcd";
-		String sub = "ed";
+		String original = "waterbottlewaterbottle";
+		String sub = "erbottlewat";
 		SubString su = new SubString();
 		System.out.println(su.isSubstring(original, sub));
 	}
