@@ -56,6 +56,7 @@ public class LinkedListNode {
 		head = head.deleteSelectNode(head, 1);
 		head = head.deleteSelectNode(head, 5);
 		head = head.deleteSelectNode(head, 3);
+		
 		LinkedListNode point = head;
 
 		while(point!=null){
