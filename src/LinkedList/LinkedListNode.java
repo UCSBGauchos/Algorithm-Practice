@@ -2,7 +2,7 @@ package LinkedList;
 
 public class LinkedListNode {
 	public LinkedListNode next;
-	private int data;
+	public int data;
 	
 	public LinkedListNode(int _data){
 		this.data = _data;
