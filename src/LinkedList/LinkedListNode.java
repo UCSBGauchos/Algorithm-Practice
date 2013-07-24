@@ -26,6 +26,14 @@ public class LinkedListNode {
 		return head;
 	}
 	
+	public LinkedListNode getTail(LinkedListNode head){
+		LinkedListNode node= head;
+		while(node.next != null){
+			node = node.next;
+		}
+		return node;
+	}
+	
 	public LinkedListNode deleteSelectNode(LinkedListNode head, int _data){
 		if(head.getData() == _data){
 			head = head.next; 
