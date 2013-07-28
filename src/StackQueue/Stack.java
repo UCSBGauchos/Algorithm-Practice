@@ -23,6 +23,16 @@ public class Stack {
 		return top.data;
 	}
 	
+	public int getLength(){
+		Node point = top;
+		int length = 0;
+		while(point!=null){
+			length ++;
+			point = point.next;
+		}
+		return length;
+	}
+	
 	public static void main(String [] args){
 		Stack stack = new Stack();
 		stack.push(1);
@@ -33,6 +43,7 @@ public class Stack {
 		int result = stack.peek();
 		System.out.println(tmp.data);
 		System.out.println(result);
+		System.out.println(stack.getLength());
 		
 	}
 }
