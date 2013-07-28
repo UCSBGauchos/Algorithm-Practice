@@ -2,6 +2,19 @@ package StackQueue;
 
 public class Stack {
 	private Node top;
+	private int capacity;
+	
+	public Stack(){
+		
+	}
+	
+	public Stack(int _capacity){
+		this.capacity = _capacity;
+	}
+	
+	public boolean isFull(){
+		return this.getLength()==capacity;
+	}
 	
 	public Node pop(){
 		if(top != null){
