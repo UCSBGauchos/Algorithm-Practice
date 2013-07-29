@@ -5,6 +5,7 @@ public class SortStack {
 		Stack helper = new Stack();
 		while(s.getLength()!=0){
 			int tmp = s.pop().data;
+			//important! Do the first part first! 
 			while(helper.getLength()!=0 && helper.peek()>tmp){
 				s.push(helper.pop().data);
 			}
