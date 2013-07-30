@@ -3,6 +3,8 @@ package TreeGraph;
 import java.util.ArrayList;
 
 public class Node {
+	
+	//for tree
 	public Node right;
 	public Node left;
 	public Node father;
@@ -38,6 +40,16 @@ public class Node {
 		}
 		this.adjacent.add(n);
 		n.adjacent.add(this);
+	}
+	
+	public void addLeft(Node n){
+		this.left = n;
+		this.left.father = this;
+	}
+	
+	public void addRight(Node n){
+		this.right = n;
+		this.right.father = this;
 	}
 	
 }
