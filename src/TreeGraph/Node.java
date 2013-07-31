@@ -44,7 +44,6 @@ public class Node {
 	
 	public void addLeft(Node n){
 		this.left = n;
-		//this.left.father = this;
 		if(n != null){
 			this.left.father = this;
 		}
@@ -52,7 +51,6 @@ public class Node {
 	
 	public void addRight(Node n){
 		this.right = n;
-		//this.right.father = this;
 		if(n != null){
 			this.right.father = this;
 		}
