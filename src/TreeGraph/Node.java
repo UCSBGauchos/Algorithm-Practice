@@ -7,7 +7,7 @@ public class Node {
 	//for tree
 	public Node right;
 	public Node left;
-	public Node father;
+	public Node parent;
 	
 	public int data;
 	//for graph
@@ -23,7 +23,7 @@ public class Node {
 	public Node (int _data){
 		this.right = null;
 		this.left = null;
-		this.father = null;
+		this.parent = null;
 		this.adjacent = new ArrayList<Node> ();
 		this.data = _data;
 		this.isVisited = visit.NOTVISITED; 
@@ -45,14 +45,14 @@ public class Node {
 	public void addLeft(Node n){
 		this.left = n;
 		if(n != null){
-			this.left.father = this;
+			this.left.parent = this;
 		}
 	}
 	
 	public void addRight(Node n){
 		this.right = n;
 		if(n != null){
-			this.right.father = this;
+			this.right.parent = this;
 		}
 	}
 	
