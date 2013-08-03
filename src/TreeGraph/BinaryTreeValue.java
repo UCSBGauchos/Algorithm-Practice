@@ -31,7 +31,7 @@ public class BinaryTreeValue {
 		node5.addRight(node6);
 		
 		BinaryTreeValue value = new BinaryTreeValue();
-		value.numPathEqualToSum(node1, 1, 0, 0);
+		value.numPathEqualToSum(node1, 10, 0, 0);
 		
 		
 	}
