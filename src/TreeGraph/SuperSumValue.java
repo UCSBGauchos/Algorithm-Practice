@@ -10,7 +10,7 @@ public class SuperSumValue {
 	
 	//the node can be normal node
 	public int findSum(Node root, Node node){
-		// use IN-ORDER to find the sum
+		// use POST-ORDER to find the sum
 		if(root == node){
 			System.out.println("Find the node");
 			return node.data;
