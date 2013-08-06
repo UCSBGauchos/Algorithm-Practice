@@ -7,7 +7,7 @@ public class Permutation {
 		if(str == null){
 			return null;
 		}
-		
+		//every time create a new ArrayList to avoid storing the old result
 		ArrayList<String> permutations = new ArrayList<String>();
 		if(str.length() == 0){
 			permutations.add("");
