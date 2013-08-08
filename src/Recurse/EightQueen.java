@@ -11,6 +11,9 @@ public class EightQueen {
 			result.add(columns.clone());
 		}else{
 			for(int col=0; col<grid_size; col++){
+				//if col in row is OK, set this row, recursively go to next row
+				//if it is not OK, try next col in this row
+				//when the next row return recursively, still try next col until col_size
 				if(check(columns, row, col)){
 					columns[row] = col;
 					placeQueens(row+1, columns, result);
