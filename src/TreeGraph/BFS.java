@@ -13,7 +13,7 @@ public class BFS {
 		System.out.println("Node "+root.data+" is being visited!");
 		root.isVisited = Node.visit.VISITED;
 		queue.add(root);
-		
+		//first visit, then add, then poll its adj
 		//for each node in the queue, after visiting all its ads(add the queue), pop the next; 
 		while(queue.size()!=0){
 			Node tmp = queue.poll();
