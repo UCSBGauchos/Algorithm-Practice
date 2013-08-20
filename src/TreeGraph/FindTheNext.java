@@ -10,7 +10,7 @@ public class FindTheNext {
 			return leftMostChild(node.right);
 		}else{
 //			System.out.println(node.parent.parent.data);
-			while(node.parent!=null && node.parent.left == null){
+			while(node.parent!=null && node.parent.left == node){
 				node = node.parent;
 			}
 			if(node.parent == null){
