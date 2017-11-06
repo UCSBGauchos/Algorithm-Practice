@@ -1,0 +1,6 @@
+1. 类 public class XXX {
+}
+2. 在类中public static void main(string [] args) {
+}
+3. 在类中处理逻辑函数 public XXX function (XXX name) {
+}
